@@ -13,7 +13,7 @@ const NavBar = () => {
       <h2>Logo</h2>
       <nav>
         <Link href="/" target={"_blank"}>
-          X
+          {/* X */}
         </Link>
         <Link href="/" target={"_blank"}>
           X

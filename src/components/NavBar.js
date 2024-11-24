@@ -1,7 +1,8 @@
-import React from "react";
 import Link from "next/link";
 import Logo from "./Logo";
 import { useRouter } from "next/router";
+import { GithubIcon, LinkedInIcon, TwitterIcon } from "./Icons";
+import { motion } from "framer-motion";
 
 const CustomLink = ({ href, title, className = "" }) => {
   const router = useRouter();
@@ -33,22 +34,34 @@ const NavBar = () => {
         <CustomLink href="/contact" title="Contact" className="ml-4" />
       </nav>
 
-      <nav>
-        <Link href="/" target={"_blank"}>
-          X
-        </Link>
-        <Link href="/" target={"_blank"}>
-          X
-        </Link>
-        <Link href="/" target={"_blank"}>
-          X
-        </Link>
-        <Link href="/" target={"_blank"}>
-          X
-        </Link>
-        <Link href="/" target={"_blank"}>
-          X
-        </Link>
+      <nav className="flex items-center justify-center flex-wrap">
+        <motion.a
+          href="https://github.com/WaltGreenwich"
+          target={"_blank"}
+          whileHover={{ y: -2 }}
+          className="w-6 mx-3"
+          whileTap={{ scale: 0.9 }}
+        >
+          <GithubIcon />
+        </motion.a>
+        <motion.a
+          href="https://www.linkedin.com/in/waltgreenwich/"
+          target={"_blank"}
+          whileHover={{ y: -2 }}
+          className="w-6 mx-3"
+          whileTap={{ scale: 0.9 }}
+        >
+          <LinkedInIcon />
+        </motion.a>
+        <motion.a
+          href="https://x.com/GreenwichW"
+          target={"_blank"}
+          whileHover={{ y: -2 }}
+          className="w-6 ml-3"
+          whileTap={{ scale: 0.9 }}
+        >
+          <TwitterIcon />
+        </motion.a>
       </nav>
 
       <div className="absolute left-[50%] top-2 translate-x-[50%]">

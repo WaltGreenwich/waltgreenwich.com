@@ -2,6 +2,8 @@ import Layout from "@/components/Layout";
 import Head from "next/head";
 import Image from "next/image";
 import profilePic1 from "../../public/images/profile/developer-profile-1.png";
+import AnimatedText from "@/components/AnimatedText";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -21,15 +23,28 @@ export default function Home() {
               />
             </div>
 
-            <div className="w-1/2">
-              <h1>Transforming Ideas Into Impactful Digital Experiences</h1>
-              <p>
+            <div className="w-1/2 flex flex-col items-center self-center">
+              <AnimatedText
+                text="Transforming Ideas Into Impactful Digital Experiences."
+                className="!text-6xl !text-left"
+              />
+              <p className="my-4 text-base font-medium">
                 As a full-stack developer with expertise in React.js, Next.js,
                 and modern web design, I specialize in creating functional and
                 visually appealing web applications. Explore my recent projects,
                 where I combine design, technology, and usability to deliver
                 innovative solutions.
               </p>
+              <div className="flex items-center self-start mt-2">
+                <Link
+                  href="https://drive.google.com/file/d/1kjZjO-L1iFY8cUsfhnwXWJ384zIN8XBa/view?usp=sharing"
+                  target={"_blanck"}
+                  className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark"
+                >
+                  CV
+                </Link>
+                <Link href="mailto:waltgreenwich.devsec@gmail.com">EMAIL</Link>
+              </div>
             </div>
           </div>
         </Layout>

@@ -4,6 +4,7 @@ import Image from "next/image";
 import profilePic1 from "../../public/images/profile/developer-profile-1.png";
 import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
+import { LinkArrow } from "@/components/Icons";
 
 export default function Home() {
   return (
@@ -39,11 +40,16 @@ export default function Home() {
                 <Link
                   href="https://drive.google.com/file/d/1kjZjO-L1iFY8cUsfhnwXWJ384zIN8XBa/view?usp=sharing"
                   target={"_blanck"}
+                  className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark mr-4"
+                >
+                  CV <LinkArrow className="w-6 ml-2" />
+                </Link>
+                <Link
+                  href="mailto:waltgreenwich.devsec@gmail.com"
                   className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark"
                 >
-                  CV
+                  EMAIL
                 </Link>
-                <Link href="mailto:waltgreenwich.devsec@gmail.com">EMAIL</Link>
               </div>
             </div>
           </div>

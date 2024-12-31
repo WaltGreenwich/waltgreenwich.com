@@ -461,3 +461,37 @@ export const LinkArrow = ({ className, ...rest }) => (
     />
   </svg>
 );
+
+export const LocationPinIcon = ({ className, ...rest }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="1em"
+    height="1em"
+    viewBox="0 0 24 24"
+    {...rest}
+    className={`w-full h-auto ${className}`}
+  >
+    <path fill="none" d="M0 0h24v24H0z" />
+    <path
+      fill="currentColor"
+      d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+    />
+  </svg>
+);
+
+export const EmailIcon = ({ className, ...rest }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="1em"
+    height="1em"
+    viewBox="0 0 24 24"
+    {...rest}
+    className={`w-full h-auto ${className}`}
+  >
+    <path fill="none" d="M0 0h24v24H0z" />
+    <path
+      fill="currentColor"
+      d="M12 13 3 7.82V18h18V7.82L12 13zM12 11l9-5H3l9 5zm0-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"
+    />
+  </svg>
+);

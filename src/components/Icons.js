@@ -491,7 +491,7 @@ export const EmailIcon = ({ className, ...rest }) => (
     <path fill="none" d="M0 0h24v24H0z" />
     <path
       fill="currentColor"
-      d="M12 13 3 7.82V18h18V7.82L12 13zM12 11l9-5H3l9 5zm0-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"
+      d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"
     />
   </svg>
 );

@@ -49,7 +49,7 @@ const contact = () => {
                   <span>waltgreenwich.devsec@gmail.com</span>
                 </div>
                 <div className="flex items-center">
-                  <LocationPinIcon className="text-red-500 w-4 h-4 mr-2" />
+                  <LocationPinIcon className="text-red-500 w-auto mr-2" />
                   <span>
                     Currently based in{" "}
                     <span className="font-bold">Lima, Perú</span>
@@ -60,7 +60,7 @@ const contact = () => {
                   target={"_blank"}
                   className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark mt-4"
                 >
-                  Download CV <LinkArrow className="w-4 ml-2" />
+                  Download CV <LinkArrow className="w-auto ml-2" />
                 </Link>
               </div>
             </div>

@@ -21,8 +21,11 @@ const Details = ({ school, year, program, certificateLink, logo }) => {
       >
         <div className="flex items-center mb-2">
           <Image src={logo} alt="logo" className="w-16 h-16 mr-2 rounded-lg" />
-          <span className="text-gray-600">
-            {year} <br /> <p className="text-xl font-semibold">{school}</p>
+          <span className="text-gray-600 dark:text-light/75">
+            {year} <br />{" "}
+            <p className="text-xl font-semibold dark:text-primaryDark">
+              {school}
+            </p>
           </span>
         </div>
         <h3 className="text-2xl font-bold mb-2">{program}</h3>
@@ -33,7 +36,7 @@ const Details = ({ school, year, program, certificateLink, logo }) => {
               href={certificateLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-600 text-lg font-semibold inline-flex items-center transform transition-transform duration-200 hover:translate-x-1 "
+              className="text-gray-600 text-lg font-semibold inline-flex items-center transform transition-transform duration-200 hover:translate-x-1 dark:text-light/75"
             >
               Certificate
               <span className="ml-1 text-2xl">&#10140;</span>
@@ -58,7 +61,7 @@ const Education = () => {
       <div ref={ref} className="w-[75%] mx-auto relative">
         <motion.div
           style={{ scaleY: scrollYProgress }}
-          className="absolute left-9 top-0 w-[4px] h-full bg-dark origin-top"
+          className="absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-light"
         />
 
         <ul className="w-full flex flex-col items-start justify-between ml-4">

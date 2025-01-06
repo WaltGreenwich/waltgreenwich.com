@@ -35,7 +35,7 @@ const contact = () => {
             </div>
 
             {/* Información de contacto */}
-            <div className="flex flex-col items-start gap-6">
+            <div className="flex flex-col items-start gap-6 dark:text-light">
               <p className="my-4 font-medium">
                 I’m excited to connect and collaborate on meaningful
                 opportunities. Feel free to reach out if you value dedication,
@@ -49,7 +49,7 @@ const contact = () => {
                   <span>waltgreenwich.devsec@gmail.com</span>
                 </div>
                 <div className="flex items-center">
-                  <LocationPinIcon className="text-red-500 w-auto mr-2" />
+                  <LocationPinIcon className="w-4 mr-2" />
                   <span>
                     Currently based in{" "}
                     <span className="font-bold">Lima, Perú</span>
@@ -58,9 +58,9 @@ const contact = () => {
                 <Link
                   href="https://drive.google.com/file/d/10LIdfPK9sEW7LPJHiz4TIVo3yJ9bCp1q/view?usp=drive_link"
                   target={"_blank"}
-                  className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark mt-4"
+                  className="flex items-center justify-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:dark:bg-dark hover:text-dark hover:dark:text-light dark:bg-light dark:text-dark hover:dark:border-light border-2 border-solid border-transparent hover:border-dark mt-4"
                 >
-                  Download CV <LinkArrow className="w-auto ml-2" />
+                  Download CV <LinkArrow className="w-5 ml-2" />
                 </Link>
               </div>
             </div>

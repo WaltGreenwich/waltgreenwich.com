@@ -18,8 +18,8 @@ const contact = () => {
           <AnimatedText text="Contact" className="mb-16" />
           <div className="flex flex-row justify-between items-start gap-16 w-full">
             {/* Contenedor del CV */}
-            <div className="flex-shrink-0 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-4">
-              <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark" />
+            <div className="flex-shrink-0 relative h-max rounded-2xl border-2 border-solid border-dark dark:border-light bg-light dark:bg-dark p-4">
+              <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light" />
               <a
                 href="/images/cv/cv_imagen.png"
                 target="_blank"
@@ -49,7 +49,7 @@ const contact = () => {
                   <span>waltgreenwich.devsec@gmail.com</span>
                 </div>
                 <div className="flex items-center">
-                  <LocationPinIcon className="w-4 mr-2" />
+                  <LocationPinIcon className="w-auto mr-2" />
                   <span>
                     Currently based in{" "}
                     <span className="font-bold">Lima, Perú</span>
@@ -60,7 +60,7 @@ const contact = () => {
                   target={"_blank"}
                   className="flex items-center justify-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:dark:bg-dark hover:text-dark hover:dark:text-light dark:bg-light dark:text-dark hover:dark:border-light border-2 border-solid border-transparent hover:border-dark mt-4"
                 >
-                  Download CV <LinkArrow className="w-5 ml-2" />
+                  Download CV <LinkArrow className="w-auto ml-2" />
                 </Link>
               </div>
             </div>

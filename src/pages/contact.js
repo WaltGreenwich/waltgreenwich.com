@@ -64,7 +64,7 @@ const contact = () => {
                   <span>waltgreenwich.devsec@gmail.com</span>
                 </div>
                 <div className="flex items-center md:text-sm">
-                  <LocationPinIcon className="w-4 mr-2 md:mr-1.5" />
+                  <LocationPinIcon className=" md:mr-1.5" />
                   <span>
                     Currently based in{" "}
                     <span className="font-bold">Lima, Perú</span>

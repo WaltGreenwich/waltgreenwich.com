@@ -469,7 +469,7 @@ export const LocationPinIcon = ({ className, ...rest }) => (
     height="24"
     viewBox="0 0 24 24"
     {...rest}
-    className={`w-full h-auto ${className}`}
+    className={`w-6 h-6 ${className}`}
   >
     <path fill="none" d="M0 0h24v24H0z" />
     <path

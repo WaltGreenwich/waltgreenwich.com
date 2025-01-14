@@ -41,7 +41,7 @@ const contact = () => {
               </div>
               {/* Botón debajo de la imagen */}
               <Link
-                href="https://drive.google.com/file/d/10LIdfPK9sEW7LPJHiz4TIVo3yJ9bCp1q/view?usp=drive_link"
+                href="https://drive.google.com/file/d/1_LyDRYPHXABbF3ycYIKaR8ksnVrsa0_M/view?usp=sharing"
                 target={"_blank"}
                 className="mt-4 flex items-center justify-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:dark:bg-dark hover:text-dark hover:dark:text-light dark:bg-light dark:text-dark hover:dark:border-light border-2 border-solid border-transparent hover:border-dark"
               >

@@ -7,6 +7,7 @@ import { GithubIcon } from "@/components/Icons";
 import project1 from "../../public/images/projects/gericht-restaurant.png";
 import project2 from "../../public/images/projects/nike-webclone.png";
 import project3 from "../../public/images/projects/brainwave.png";
+import project4 from "../../public/images/projects/movieapp.png";
 import TransitionEffect from "@/components/TransitionEffect";
 
 const FeaturedProject = ({ type, title, summary, link, img, github }) => {
@@ -152,6 +153,16 @@ const projects = () => {
                 link="https://waltgreenwich-brainwave.netlify.app/"
                 github="https://github.com/WaltGreenwich/brainwave"
                 type="Modern Homepage"
+              />
+            </div>
+            <div className="col-span-12">
+              <FeaturedProject
+                title="MovieApp"
+                img={project4}
+                summary="An elegant and efficient movie search platform built with React.js, Appwrite, and Tailwind CSS. It features real-time movie data from the TMDB API and optimized search performance with useDebounce for smooth input handling."
+                link="https://movie-app-waltgreenwich.netlify.app/"
+                github="https://github.com/WaltGreenwich/React19MovieApp"
+                type="Featured Project"
               />
             </div>
           </div>

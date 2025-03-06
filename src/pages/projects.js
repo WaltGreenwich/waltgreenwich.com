@@ -1,6 +1,7 @@
 import AnimatedText from "@/components/AnimatedText";
 import Head from "next/head";
 import Layout from "@/components/Layout";
+import { Badge } from "@/components/Badges";
 import Link from "next/link";
 import Image from "next/image";
 import { GithubIcon } from "@/components/Icons";
@@ -10,7 +11,7 @@ import project3 from "../../public/images/projects/brainwave.png";
 import project4 from "../../public/images/projects/movieapp.png";
 import TransitionEffect from "@/components/TransitionEffect";
 
-const FeaturedProject = ({ type, title, summary, link, img, github }) => {
+const FeaturedProject = ({ type, title, summary, link, img, github, name }) => {
   return (
     <article
       className="w-full flex items-center justify-between rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 relative rounded-br-2xl dark:bg-dark dark:border-light
@@ -47,6 +48,11 @@ const FeaturedProject = ({ type, title, summary, link, img, github }) => {
             {title}
           </h2>
         </Link>
+        <div>
+          {(Array.isArray(name) ? name : [name]).map((tech) => (
+            <Badge key={tech} name={tech} />
+          ))}
+        </div>
         <p className="my-2 font-medium text-dark dark:text-light sm:text-sm">
           {summary}
         </p>
@@ -68,7 +74,7 @@ const FeaturedProject = ({ type, title, summary, link, img, github }) => {
   );
 };
 
-const Project = ({ title, type, img, link, github }) => {
+const Project = ({ title, type, img, link, github, name }) => {
   console.log({ title, type, img, link, github });
   return (
     <article className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light dark:bg-dark p-6 relative dark:border-light xs:p-4">
@@ -93,6 +99,11 @@ const Project = ({ title, type, img, link, github }) => {
             {title}
           </h2>
         </Link>
+        <div>
+          {(Array.isArray(name) ? name : [name]).map((tech) => (
+            <Badge key={tech} name={tech} />
+          ))}
+        </div>
         <div className="w-full mt-2 flex items-center justify-between">
           <Link
             href={link}
@@ -130,6 +141,7 @@ const projects = () => {
               <FeaturedProject
                 title="Gericht Restaurant"
                 img={project1}
+                name={["React", "Figma", "Tailwind"]}
                 summary="A visually appealing and easy-to-use restaurant website built with React.js and Tailwind CSS. It displays the restaurant's menu, photo gallery, and contact information in a clear and accessible way."
                 link="https://restaurant-gericht-waltgreenwich.netlify.app/"
                 github="https://github.com/WaltGreenwich/modern_ui_ux_restaurant"
@@ -140,7 +152,7 @@ const projects = () => {
               <Project
                 title="Nike Web Clone"
                 img={project2}
-                summary="A visually appealing and easy-to-use restaurant website built with React.js and Tailwind CSS. It displays the restaurant's menu, photo gallery, and contact information in a clear and accessible way."
+                name={["React", "Figma", "Tailwind"]}
                 link="https://nike-web-clone-wltgr.netlify.app/"
                 github="https://github.com/WaltGreenwich/nike-web-clone"
                 type="Modern Homepage Clone"
@@ -150,6 +162,7 @@ const projects = () => {
               <Project
                 title="Brainwave"
                 img={project3}
+                name={["React", "Figma", "Tailwind"]}
                 link="https://waltgreenwich-brainwave.netlify.app/"
                 github="https://github.com/WaltGreenwich/brainwave"
                 type="Modern Homepage"
@@ -159,6 +172,7 @@ const projects = () => {
               <FeaturedProject
                 title="MovieApp"
                 img={project4}
+                name={["React", "Figma", "Tailwind", "Appwrite"]}
                 summary="An elegant and efficient movie search platform built with React.js, Appwrite, and Tailwind CSS. It features real-time movie data from the TMDB API and optimized search performance with useDebounce for smooth input handling."
                 link="https://movie-app-waltgreenwich.netlify.app/"
                 github="https://github.com/WaltGreenwich/React19MovieApp"

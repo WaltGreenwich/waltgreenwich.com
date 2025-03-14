@@ -61,7 +61,7 @@ const contact = () => {
               <div className="flex flex-col items-start">
                 <div className="flex items-center md:text-sm">
                   <EmailIcon className="w-6 h-6 mr-2 md:w-4 md:mr-1.5" />
-                  <span>waltgreenwich.devsec@gmail.com</span>
+                  <span>walter.greenwich@gmail.com</span>
                 </div>
                 <div className="flex items-center md:text-sm">
                   <LocationPinIcon className=" md:mr-1.5" />

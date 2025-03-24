@@ -4,30 +4,38 @@ import Layout from "./Layout";
 const Footer = () => {
   return (
     <footer className="w-full border-t-2 border-solid border-dark font-medium text-lg dark:text-light dark:border-light sm:text-base">
-      <Layout className="py-8 flex items-center justify-between lg:flex-col lg:py-6">
-        <span>{new Date().getFullYear()} &copy; All Rights Reserved.</span>
+      <Layout className="grid grid-cols-3 place-items-center gap-x-16 py-8 text-center sm:grid-cols-1 lg:py-6">
+        {/* Columna 1 */}
+        <div>
+          <span>{new Date().getFullYear()} &copy; All Rights Reserved.</span>
+        </div>
 
-        <div className="flex items-center lg:py-2">
+        {/* Columna 2 */}
+        <div>
           Made with{" "}
           <span className="text-2xl text-primary dark:text-primaryDark px-1">
-            &#9825;{" "}
+            &#9825;
           </span>
           by&nbsp;
           <Link
             href="https://www.linkedin.com/in/waltgreenwich/"
-            target="_blanck"
+            target="_blank"
             className="underline underline-offset-2"
           >
             WaltGreenwich
           </Link>
         </div>
-        <Link
-          href="https://www.linkedin.com/in/waltgreenwich/"
-          target="_blanck"
-          className="underline underline-offset-2"
-        >
-          Say hello
-        </Link>
+
+        {/* Columna 3 */}
+        <div>
+          <Link
+            href="https://www.linkedin.com/in/waltgreenwich/"
+            target="_blank"
+            className="underline underline-offset-2"
+          >
+            Say hello
+          </Link>
+        </div>
       </Layout>
     </footer>
   );

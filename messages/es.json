@@ -1,0 +1,12 @@
+{
+  "Home": {
+    "title": "Transformando ideas en experiencias digitales impactantes.",
+    "description": "Como desarrollador full-stack con experiencia en React.js, Next.js y diseño web, me especializo en crear aplicaciones web modernas, funcionales y atractivas. Descubre mis recientes proyectos, donde combino diseño, tecnología y usabilidad para ofrecer soluciones innovadoras."
+  },
+  "LocaleSwitcher": {
+    "switchLocale": "Switch to {locale, select, en {English} es {Spanish} other {Unknown}}"
+  },
+  "Layout": {
+    "pageTitle": "My Aplicación"
+  }
+}

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import LanguageSwitcher from "./LanguageSwitcher";
 import Logo from "./Logo";
 import { useRouter } from "next/router";
 import { useState } from "react";
@@ -91,6 +92,7 @@ const NavBar = () => {
         ></span>
       </button>
 
+      {/* En pantallas grandes */}
       <div className="w-full flex justify-between items-center lg:hidden">
         <nav>
           <CustomLink href="/" title="Home" className="mr-4" />
@@ -130,7 +132,7 @@ const NavBar = () => {
 
           <button
             onClick={() => setMode(mode === "light" ? "dark" : "light")}
-            className={`ml-3 flex items-center justify-center rounded-full p-1 ${
+            className={`mx-3 flex items-center justify-center rounded-full p-1 ${
               mode === "light" ? "bg-dark text-light" : "bg-light text-dark"
             }`}
           >
@@ -140,6 +142,7 @@ const NavBar = () => {
               <SunIcon className={"fill-dark"} />
             )}
           </button>
+          <LanguageSwitcher />
         </nav>
       </div>
 
@@ -207,7 +210,7 @@ const NavBar = () => {
 
             <button
               onClick={() => setMode(mode === "light" ? "dark" : "light")}
-              className={`ml-3 flex items-center justify-center rounded-full p-1 ${
+              className={`mx-3 flex items-center justify-center rounded-full p-1 ${
                 mode === "light" ? "bg-dark text-light" : "bg-light text-dark"
               }`}
             >
@@ -217,6 +220,7 @@ const NavBar = () => {
                 <SunIcon className={"fill-dark"} />
               )}
             </button>
+            <LanguageSwitcher />
           </nav>
         </motion.div>
       ) : null}

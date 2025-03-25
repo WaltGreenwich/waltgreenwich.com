@@ -1,0 +1,55 @@
+{
+  "Layout": {
+    "defaultTitle": "Walter Greenwich",
+    "pageTitle": "Portafolio de Desarrollador Full-Stack"
+  },
+  "Home": {
+    "pageTitle": "Portafolio de Desarrollador Full-Stack",
+    "title": "Transformando ideas en experiencias digitales impactantes.",
+    "description": "Desarrollador full-stack con experiencia en React.js, Next.js, Node y diseño web, me especializo en crear aplicaciones web modernas, funcionales y atractivas. Descubre mis recientes proyectos, donde combino diseño, tecnología y usabilidad para ofrecer soluciones innovadoras."
+  },
+  "LocaleSwitcher": {
+    "switchLocale": "Switch to {locale, select, en {English} es {Spanish} other {Unknown}}"
+  },
+
+  "Navbar": {
+    "Home": "Inicio",
+    "About": "Sobre mí",
+    "Projects": "Proyectos",
+    "Contact": "Contacto"
+  },
+  "Footer": {
+    "madeWith": "Hecho con",
+    "by": "por"
+  },
+  "About": {
+    "pageTitle": "Sobre mí",
+    "title": "¡Dando forma al futuro digital!",
+    "biography": "BIOGRAFIA",
+    "p1": "Hola, soy Walter Greenwich, desarrollador frontend especializado en crear sitios web modernos, visualmente atractivos e intuitivos, centrados en el usuario.",
+    "p2": "Con formación científica y experiencia como representante de ventas, he perfeccionado mis habilidades de comunicación, resolución de problemas y gestión de proyectos. Me especializo en React, Tailwind CSS y Next.js para crear soluciones digitales optimizadas y de alto rendimiento.",
+    "p3": "Me apasiona mantenerme al día con las últimas novedades en desarrollo web, desde landing pages hasta plataformas de comercio electrónico. Aporto a cada proyecto mi pasión por el diseño responsivo y el pensamiento centrado en el usuario. Colaboremos para hacer realidad tu visión.",
+    "pCompleted": "Proyectos Completados"
+  },
+  "Skills": {
+    "title": "Habilidades"
+  },
+  "Education": {
+    "title": "Educación",
+    "certificate": "Certificado"
+  },
+  "Projects": {
+    "pageTitle": "Proyectos",
+    "title": "Suéñalo. Constrúyelo. Vívelo",
+    "type": "Proyecto Destacado",
+    "summary1": "Un sitio web de restaurante visualmente atractivo y fácil de usar, creado con React.js y Tailwind CSS. Muestra el menú, la galería de fotos y la información de contacto del restaurante de forma clara y accesible.",
+    "summary2": "Una plataforma de búsqueda de películas elegante y eficiente, desarrollada con React.js, Appwrite y Tailwind CSS. Ofrece datos de películas en tiempo real de la API de TMDB y un rendimiento de búsqueda optimizado con useDebounce para una gestión fluida de la entrada."
+  },
+  "Contact": {
+    "pageTitle": "Contacto",
+    "title": "Contacto",
+    "description": "¡Me entusiasma colaborar en proyectos significativos! Si valoras la dedicación, la creatividad y los resultados, ¡conectemos! Estoy listo para aportar mi experiencia y ayudarte a alcanzar tus metas. ¿Qué dices, empezamos?",
+    "baseIn": "Actualmente estoy en",
+    "dCV": "Descargar CV"
+  }
+}

@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { useTranslations } from "next-intl";
+import LanguageSwitcher from "./LanguageSwitcher";
 import Logo from "./Logo";
 import { useRouter } from "next/router";
 import { useState } from "react";
@@ -61,6 +63,7 @@ const CustomMobileLink = ({ href, title, className = "", toggle }) => {
 };
 
 const NavBar = () => {
+  const t = useTranslations("Navbar");
   const [mode, setMode] = useThemeSwitcher();
   const [isOpen, setIsOpen] = useState(false);
 
@@ -91,12 +94,13 @@ const NavBar = () => {
         ></span>
       </button>
 
+      {/* En pantallas grandes */}
       <div className="w-full flex justify-between items-center lg:hidden">
         <nav>
-          <CustomLink href="/" title="Home" className="mr-4" />
-          <CustomLink href="/about" title="About" className="mx-4" />
-          <CustomLink href="/projects" title="Projects" className="mx-4" />
-          <CustomLink href="/contact" title="Contact" className="ml-4" />
+          <CustomLink href="/" title={t("Home")} className="mr-4" />
+          <CustomLink href="/about" title={t("About")} className="mx-4" />
+          <CustomLink href="/projects" title={t("Projects")} className="mx-4" />
+          <CustomLink href="/contact" title={t("Contact")} className="ml-4" />
         </nav>
 
         <nav className="flex items-center justify-center flex-wrap">
@@ -130,7 +134,7 @@ const NavBar = () => {
 
           <button
             onClick={() => setMode(mode === "light" ? "dark" : "light")}
-            className={`ml-3 flex items-center justify-center rounded-full p-1 ${
+            className={`mx-3 flex items-center justify-center rounded-full p-1 ${
               mode === "light" ? "bg-dark text-light" : "bg-light text-dark"
             }`}
           >
@@ -140,9 +144,10 @@ const NavBar = () => {
               <SunIcon className={"fill-dark"} />
             )}
           </button>
+          <LanguageSwitcher />
         </nav>
       </div>
-
+      {/* En pantallas pequeñas */}
       {isOpen ? (
         <motion.div
           initial={{ scale: 0, opacity: 0, x: "-50%", y: "-50%" }}
@@ -152,25 +157,25 @@ const NavBar = () => {
           <nav className="flex items-center flex-col justify-center">
             <CustomMobileLink
               href="/"
-              title="Home"
+              title={t("Home")}
               className=""
               toggle={handleClick}
             />
             <CustomMobileLink
               href="/about"
-              title="About"
+              title={t("About")}
               className=""
               toggle={handleClick}
             />
             <CustomMobileLink
               href="/projects"
-              title="Projects"
+              title={t("Projects")}
               className=""
               toggle={handleClick}
             />
             <CustomMobileLink
               href="/contact"
-              title="Contact"
+              title={t("Contact")}
               className=""
               toggle={handleClick}
             />
@@ -207,7 +212,7 @@ const NavBar = () => {
 
             <button
               onClick={() => setMode(mode === "light" ? "dark" : "light")}
-              className={`ml-3 flex items-center justify-center rounded-full p-1 ${
+              className={`mx-3 flex items-center justify-center rounded-full p-1 ${
                 mode === "light" ? "bg-dark text-light" : "bg-light text-dark"
               }`}
             >
@@ -217,6 +222,7 @@ const NavBar = () => {
                 <SunIcon className={"fill-dark"} />
               )}
             </button>
+            <LanguageSwitcher />
           </nav>
         </motion.div>
       ) : null}

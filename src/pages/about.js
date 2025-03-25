@@ -1,3 +1,4 @@
+import { useTranslations } from "next-intl";
 import AnimatedText from "@/components/AnimatedText";
 import Layout from "@/components/Layout";
 import Head from "next/head";
@@ -33,42 +34,26 @@ const AnimatedNumbers = ({ value }) => {
   return <span ref={ref}></span>;
 };
 
-const about = () => {
+const About = () => {
+  const t = useTranslations("About");
+
   return (
     <>
-      <Head>
-        <title>WaltGreenwich | About Page</title>
-        <meta name="about" content="about page" />
-      </Head>
       <TransitionEffect />
       <main className="flex w-full flex-col items-center justify-center dark:text-light">
-        <Layout className="pt-16">
+        <Layout className="pt-16" pageNamespace="About">
           <AnimatedText
-            text="Shaping Digital Futures!"
+            text={t("title")}
             className="mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8"
           />
           <div className="grid w-full grid-cols-8 gap-16 sm:gap-8">
             <div className="col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8">
               <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">
-                Biography
+                {t("biography")}
               </h2>
-              <p className="my-4 font-medium">
-                Hi, I’m Walter Greenwich, a Frontend Developer focused on
-                creating modern, user-centered websites that are both visually
-                appealing and intuitive.
-              </p>
-              <p className="my-4 font-medium">
-                With a background in science and experience as a sales
-                representative, I’ve honed skills in communication,
-                problem-solving, and project management. I specialize in React,
-                Tailwind CSS, and Next.js to craft high-performance, optimized
-                digital solutions.
-              </p>
-              <p className="my-4 font-medium">
-                From landing pages to e-commerce platforms, I bring a passion
-                for responsive design and user-centered thinking to every
-                project. Let’s collaborate to turn your vision into reality.
-              </p>
+              <p className="my-4 font-medium">{t("p1")}</p>
+              <p className="my-4 font-medium">{t("p2")}</p>
+              <p className="my-4 font-medium">{t("p3")}</p>
             </div>
             <div
               className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 dark:bg-dark dark:border-light
@@ -99,7 +84,7 @@ const about = () => {
                 xl:text-center md:text-lg sm:text-base xs:text-sm
                 "
                 >
-                  projects completed
+                  {t("pCompleted")}
                 </h2>
               </div>
             </div>
@@ -112,4 +97,13 @@ const about = () => {
   );
 };
 
-export default about;
+export default About;
+
+// 📌 Cargar traducciones correctamente
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      messages: (await import(`../../messages/${locale}.json`)).default,
+    },
+  };
+}

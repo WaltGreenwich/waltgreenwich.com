@@ -8,7 +8,7 @@ import { EmailIcon, LocationPinIcon, LinkArrow } from "@/components/Icons";
 import Link from "next/link";
 import TransitionEffect from "@/components/TransitionEffect";
 
-const contact = () => {
+const Contact = () => {
   const t = useTranslations("Contact");
   return (
     <>
@@ -70,7 +70,7 @@ const contact = () => {
   );
 };
 
-export default contact;
+export default Contact;
 
 // 📌 Cargar traducciones correctamente
 export async function getStaticProps({ locale }) {

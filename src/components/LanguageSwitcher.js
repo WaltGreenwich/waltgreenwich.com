@@ -1,4 +1,5 @@
 import { useRouter } from "next/router";
+import Image from "next/image";
 
 const LanguageSwitcher = () => {
   const { locale, asPath, push } = useRouter();
@@ -24,7 +25,7 @@ const LanguageSwitcher = () => {
     >
       {/* Bandera */}
 
-      <img
+      <Image
         src={flagSrc}
         alt={`Flag ${flagText}`}
         width={24}

@@ -34,7 +34,7 @@ const AnimatedNumbers = ({ value }) => {
   return <span ref={ref}></span>;
 };
 
-const about = () => {
+const About = () => {
   const t = useTranslations("About");
 
   return (
@@ -97,7 +97,7 @@ const about = () => {
   );
 };
 
-export default about;
+export default About;
 
 // 📌 Cargar traducciones correctamente
 export async function getStaticProps({ locale }) {

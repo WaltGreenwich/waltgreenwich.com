@@ -123,7 +123,7 @@ const Project = ({ title, type, img, link, github, name }) => {
   );
 };
 
-const projects = () => {
+const Projects = () => {
   const t = useTranslations("Projects");
   return (
     <>
@@ -185,7 +185,7 @@ const projects = () => {
   );
 };
 
-export default projects;
+export default Projects;
 
 // 📌 Cargar traducciones correctamente
 export async function getStaticProps({ locale }) {

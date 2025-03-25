@@ -1,11 +1,11 @@
 import { useRouter } from "next/router";
 
 const LanguageSwitcher = () => {
-  const { locale, pathname, push } = useRouter();
+  const { locale, asPath, push } = useRouter();
 
   const toggleLanguage = () => {
     const newLocale = locale === "en" ? "es" : "en";
-    push(pathname, pathname, { locale: newLocale });
+    push(asPath, asPath, { locale: newLocale });
   };
 
   // Ruta de la bandera según el idioma

@@ -1,10 +1,15 @@
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 import Layout from "./Layout";
 
 const Footer = () => {
+  const t = useTranslations("Footer");
   return (
     <footer className="w-full border-t-2 border-solid border-dark font-medium text-lg dark:text-light dark:border-light sm:text-base">
-      <Layout className="grid grid-cols-3 place-items-center gap-x-16 py-8 text-center sm:grid-cols-1 lg:py-6">
+      <Layout
+        hideHead={true}
+        className="grid grid-cols-3 place-items-center gap-x-16 py-8 text-center sm:grid-cols-1 lg:py-6"
+      >
         {/* Columna 1 */}
         <div>
           <span>{new Date().getFullYear()} &copy; All Rights Reserved.</span>
@@ -12,11 +17,11 @@ const Footer = () => {
 
         {/* Columna 2 */}
         <div>
-          Made with{" "}
+          {t("madeWith")}{" "}
           <span className="text-2xl text-primary dark:text-primaryDark px-1">
             &#9825;
           </span>
-          by&nbsp;
+          {t("by")}&nbsp;
           <Link
             href="https://www.linkedin.com/in/waltgreenwich/"
             target="_blank"

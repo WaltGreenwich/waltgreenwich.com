@@ -1,3 +1,4 @@
+import { useTranslations } from "next-intl";
 import AnimatedText from "@/components/AnimatedText";
 import Head from "next/head";
 import Layout from "@/components/Layout";
@@ -12,6 +13,7 @@ import project4 from "../../public/images/projects/movieapp.png";
 import TransitionEffect from "@/components/TransitionEffect";
 
 const FeaturedProject = ({ type, title, summary, link, img, github, name }) => {
+  const t = useTranslations("Projects");
   return (
     <article
       className="w-full flex items-center justify-between rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 relative rounded-br-2xl dark:bg-dark dark:border-light
@@ -122,17 +124,14 @@ const Project = ({ title, type, img, link, github, name }) => {
 };
 
 const projects = () => {
+  const t = useTranslations("Projects");
   return (
     <>
-      <Head>
-        <title>WaltGreenwich | Projects Page</title>
-        <meta name="description" content="any description" />
-      </Head>
       <TransitionEffect />
       <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-light">
-        <Layout className="pt-16">
+        <Layout className="pt-16" pageNamespace="Projects">
           <AnimatedText
-            text="Dream it. Build it. Live it"
+            text={t("title")}
             className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
           />
 
@@ -142,10 +141,10 @@ const projects = () => {
                 title="Gericht Restaurant"
                 img={project1}
                 name={["React", "Figma", "Tailwind"]}
-                summary="A visually appealing and easy-to-use restaurant website built with React.js and Tailwind CSS. It displays the restaurant's menu, photo gallery, and contact information in a clear and accessible way."
+                summary={t("summary1")}
                 link="https://restaurant-gericht-waltgreenwich.netlify.app/"
                 github="https://github.com/WaltGreenwich/modern_ui_ux_restaurant"
-                type="Featured Project"
+                type={t("type")}
               />
             </div>
             <div className="col-span-6 sm:col-span-12">
@@ -173,10 +172,10 @@ const projects = () => {
                 title="MovieApp"
                 img={project4}
                 name={["React", "Figma", "Tailwind", "Appwrite"]}
-                summary="An elegant and efficient movie search platform built with React.js, Appwrite, and Tailwind CSS. It features real-time movie data from the TMDB API and optimized search performance with useDebounce for smooth input handling."
+                summary={t("summary2")}
                 link="https://movie-app-waltgreenwich.netlify.app/"
                 github="https://github.com/WaltGreenwich/React19MovieApp"
-                type="Featured Project"
+                type={t("type")}
               />
             </div>
           </div>
@@ -187,3 +186,12 @@ const projects = () => {
 };
 
 export default projects;
+
+// 📌 Cargar traducciones correctamente
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      messages: (await import(`../../messages/${locale}.json`)).default,
+    },
+  };
+}

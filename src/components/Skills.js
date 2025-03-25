@@ -1,3 +1,4 @@
+import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 
 const Skill = ({ name, x, y }) => {
@@ -16,6 +17,7 @@ const Skill = ({ name, x, y }) => {
 };
 
 const Skills = () => {
+  const t = useTranslations("Skills");
   return (
     <>
       <h2
@@ -23,7 +25,7 @@ const Skills = () => {
       md:text-6xl md:mt-32
       "
       >
-        Skills
+        {t("title")}
       </h2>
       <div
         className="w-full h-screen relative flex items-center justify-center rounded-full bg-circularLight dark:bg-circularDark

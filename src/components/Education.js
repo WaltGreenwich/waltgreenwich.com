@@ -1,3 +1,4 @@
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import henryLogo from "../../public/images/logo/henryok_logo.webp";
 import efLogo from "../../public/images/logo/ef_logo.webp";
@@ -6,7 +7,14 @@ import { motion, useScroll } from "framer-motion";
 import { useRef } from "react";
 import LiIcon from "./LiIcon";
 
-const Details = ({ school, year, program, certificateLink, logo }) => {
+const Details = ({
+  school,
+  year,
+  program,
+  certificateLink,
+  logo,
+  certificateText,
+}) => {
   const ref = useRef(null);
   return (
     <li
@@ -40,7 +48,7 @@ const Details = ({ school, year, program, certificateLink, logo }) => {
               rel="noopener noreferrer"
               className="text-gray-600 text-lg font-semibold inline-flex items-center transform transition-transform duration-200 hover:translate-x-1 dark:text-light/75"
             >
-              Certificate
+              {certificateText}
               <span className="ml-1 text-2xl">&#10140;</span>
             </a>
           )}
@@ -51,6 +59,8 @@ const Details = ({ school, year, program, certificateLink, logo }) => {
 };
 
 const Education = () => {
+  const t = useTranslations("Education");
+
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -60,7 +70,7 @@ const Education = () => {
   return (
     <div className="my-64">
       <h2 className="font-bold text-8xl mb-32 w-full text-center md:text-6xl xs:text-4xl md:mb-16">
-        Education
+        {t("title")}
       </h2>
       <div ref={ref} className="w-[75%] mx-auto relative lg:w-[90%] md:w-full">
         <motion.div
@@ -76,6 +86,7 @@ const Education = () => {
             year="2024"
             program="Full Stack Developer"
             certificateLink="https://d2rf2c6bvm78n9.cloudfront.net/new-cert?id=14a9d8b93bfa6fa60ac9989572d2bd6e273e5e575355813bf37bf54a4340db5a"
+            certificateText={t("certificate")}
           />
 
           <Details
@@ -84,6 +95,7 @@ const Education = () => {
             year="2024"
             program="B2 Upper Intermediate"
             certificateLink="https://cert.efset.org/TidVBF"
+            certificateText={t("certificate")}
           />
 
           <Details
@@ -92,6 +104,7 @@ const Education = () => {
             year="2023"
             program="Data Analytics"
             certificateLink="https://www.linkedin.com/learning/certificates/045ada88f0bad0fbdab392171cd2b0c9b60c9f8454bb65ed169f6791851616b5?trk=share_certificate"
+            certificateText={t("certificate")}
           />
         </ul>
       </div>

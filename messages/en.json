@@ -1,12 +1,55 @@
 {
+  "Layout": {
+    "defaultTitle": "Walter Greenwich",
+    "pageTitle": "Full-Stack Developer Portfolio"
+  },
   "Home": {
+    "pageTitle": "Full-Stack Developer Portfolio",
     "title": "Transforming Ideas Into Impactful Digital Experiences.",
-    "description": "As a full-stack developer with expertise in React.js, Next.js, and modern web design, I specialize in creating functional and visually appealing web applications. Explore my recent projects, where I combine design, technology, and usability to deliver innovative solutions."
+    "description": "As a full-stack developer with expertise in React.js, Next.js, Node and modern web design, I specialize in creating functional and visually appealing web applications. Explore my recent projects, where I combine design, technology, and usability to deliver innovative solutions."
   },
   "LocaleSwitcher": {
     "switchLocale": "Switch to {locale, select, es {Spanish} en {English} other {Unknown}}"
   },
-  "Layout": {
-    "pageTitle": "My Application"
+
+  "Navbar": {
+    "Home": "Home",
+    "About": "About",
+    "Projects": "Projects",
+    "Contact": "Contact"
+  },
+  "Footer": {
+    "madeWith": "Made with",
+    "by": "by"
+  },
+  "About": {
+    "pageTitle": "About",
+    "title": "Shaping Digital Futures!",
+    "biography": "BIOGRAPHY",
+    "p1": "Hi, I’m Walter Greenwich, a Frontend Developer focused on creating modern, user-centered websites that are both visually appealing and intuitive.",
+    "p2": "With a background in science and experience as a sales representative, I’ve honed skills in communication, problem-solving, and project management. I specialize in React, Tailwind CSS, and Next.js to craf high-performance, optimized digital solutions.",
+    "p3": "I’m passionate about staying up-to-date with the latest web development, from landing pages to e-commerce platforms, I bring a passion for responsive design and user-centered thinking to every project. Let’s collaborate to turn your vision into reality.",
+    "pCompleted": "Projects Completed"
+  },
+  "Skills": {
+    "title": "Skills"
+  },
+  "Education": {
+    "title": "Education",
+    "certificate": "Certificate"
+  },
+  "Projects": {
+    "pageTitle": "Projects",
+    "title": "Dream it. Build it. Live it",
+    "type": "Featured Project",
+    "summary1": "A visually appealing and easy-to-use restaurant website built with React.js and Tailwind CSS. It displays the restaurant's menu, photo gallery, and contact information in a clear and accessible way.",
+    "summary2": "An elegant and efficient movie search platform built with React.js, Appwrite, and Tailwind CSS. It features real-time movie data from the TMDB API and optimized search performance with useDebounce for smooth input handling."
+  },
+  "Contact": {
+    "pageTitle": "Contact",
+    "title": "Contact",
+    "description": "I’m excited to connect and collaborate on meaningful opportunities. Feel free to reach out if you value dedication, creativity, and a results-driven approach. Let’s explore how I can contribute to your team’s success and help you achieve your goals.",
+    "baseIn": "Currently based in",
+    "dCV": "Download CV"
   }
 }

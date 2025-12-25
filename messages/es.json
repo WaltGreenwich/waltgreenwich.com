@@ -42,8 +42,9 @@
     "pageTitle": "Proyectos",
     "title": "Suéñalo. Constrúyelo. Vívelo",
     "type": "Proyecto Destacado",
-    "summary1": "Un sitio web de restaurante visualmente atractivo y fácil de usar, creado con React.js y Tailwind CSS. Muestra el menú, la galería de fotos y la información de contacto del restaurante de forma clara y accesible.",
-    "summary2": "Una plataforma de búsqueda de películas elegante y eficiente, desarrollada con React.js, Appwrite y Tailwind CSS. Ofrece datos de películas en tiempo real de la API de TMDB y un rendimiento de búsqueda optimizado con useDebounce para una gestión fluida de la entrada."
+    "summary1": "Clasificación y análisis inteligente de correos electrónicos con Google Gemini 2.0 Flash. Este sistema categoriza automáticamente los correos electrónicos, evalúa la urgencia, extrae la intención y sugiere acciones, yendo más allá de la simple clasificación basada en reglas.",
+    "summary2": "Una plataforma de búsqueda de películas elegante y eficiente, desarrollada con React.js, Appwrite y Tailwind CSS. Ofrece datos de películas en tiempo real de la API de TMDB y un rendimiento de búsqueda optimizado con useDebounce para una gestión fluida de la entrada.",
+    "summary3": "Un sitio web de restaurante visualmente atractivo y fácil de usar, creado con React.js y Tailwind CSS. Muestra el menú, la galería de fotos y la información de contacto del restaurante de forma clara y accesible."
   },
   "Contact": {
     "pageTitle": "Contacto",

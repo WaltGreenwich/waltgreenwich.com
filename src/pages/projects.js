@@ -6,10 +6,11 @@ import { Badge } from "@/components/Badges";
 import Link from "next/link";
 import Image from "next/image";
 import { GithubIcon } from "@/components/Icons";
-import project1 from "../../public/images/projects/gericht-restaurant.png";
+import project1 from "../../public/images/projects/ai-email-intelligence.png";
 import project2 from "../../public/images/projects/nike-webclone.png";
 import project3 from "../../public/images/projects/brainwave.png";
 import project4 from "../../public/images/projects/movieapp.png";
+import project5 from "../../public/images/projects/gericht-restaurant.png";
 import TransitionEffect from "@/components/TransitionEffect";
 
 const FeaturedProject = ({ type, title, summary, link, img, github, name }) => {
@@ -138,12 +139,12 @@ const Projects = () => {
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12">
               <FeaturedProject
-                title="Gericht Restaurant"
+                title="AI Email Intelligence"
                 img={project1}
-                name={["React", "Figma", "Tailwind"]}
+                name={["Python", "Gemini", "LLM", "Streamlit", "Pandas"]}
                 summary={t("summary1")}
-                link="https://restaurant-gericht-waltgreenwich.netlify.app/"
-                github="https://github.com/WaltGreenwich/modern_ui_ux_restaurant"
+                link="https://ai-email-intelligence-waltergreenwich.streamlit.app/"
+                github="https://github.com/WaltGreenwich/ai-email-intelligence"
                 type={t("type")}
               />
             </div>
@@ -175,6 +176,17 @@ const Projects = () => {
                 summary={t("summary2")}
                 link="https://movie-app-waltgreenwich.netlify.app/"
                 github="https://github.com/WaltGreenwich/React19MovieApp"
+                type={t("type")}
+              />
+            </div>
+            <div className="col-span-12">
+              <FeaturedProject
+                title="Gericht Restaurant"
+                img={project5}
+                name={["React", "Figma", "Tailwind"]}
+                summary={t("summary3")}
+                link="https://restaurant-gericht-waltgreenwich.netlify.app/"
+                github="https://github.com/WaltGreenwich/modern_ui_ux_restaurant"
                 type={t("type")}
               />
             </div>

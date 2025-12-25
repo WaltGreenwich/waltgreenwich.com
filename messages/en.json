@@ -42,8 +42,9 @@
     "pageTitle": "Projects",
     "title": "Dream it. Build it. Live it",
     "type": "Featured Project",
-    "summary1": "A visually appealing and easy-to-use restaurant website built with React.js and Tailwind CSS. It displays the restaurant's menu, photo gallery, and contact information in a clear and accessible way.",
-    "summary2": "An elegant and efficient movie search platform built with React.js, Appwrite, and Tailwind CSS. It features real-time movie data from the TMDB API and optimized search performance with useDebounce for smooth input handling."
+    "summary1": "Intelligent email classification and analysis using Google Gemini 2.0 Flash. This system automatically categorizes emails, assesses urgency, extracts intent, and suggests actions—going beyond simple rule-based classification.",
+    "summary2": "An elegant and efficient movie search platform built with React.js, Appwrite, and Tailwind CSS. It features real-time movie data from the TMDB API and optimized search performance with useDebounce for smooth input handling.",
+    "summary3": "A visually appealing and easy-to-use restaurant website built with React.js and Tailwind CSS. It displays the restaurant's menu, photo gallery, and contact information in a clear and accessible way."
   },
   "Contact": {
     "pageTitle": "Contact",

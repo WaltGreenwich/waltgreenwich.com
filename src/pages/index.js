@@ -44,7 +44,7 @@ export default function Home() {
               {/* Botones de CV y Email */}
               <div className="flex items-center self-start mt-2 lg:self-center">
                 <Link
-                  href="https://drive.google.com/file/d/1htdV3hIiuaRRx5ifRTgH89Sdq84UfJf3/view?usp=sharing"
+                  href={t("cvLink")}
                   target="_blank"
                   className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark mr-4 dark:text-dark dark:bg-light hover:dark:bg-dark hover:dark:text-light hover:dark:border-light md:p-2 md:px-4 md:text-base"
                 >

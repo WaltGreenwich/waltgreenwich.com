@@ -1,15 +1,20 @@
 import { useTranslations } from "next-intl";
+import { useRouter } from "next/router";
 import AnimatedText from "@/components/AnimatedText";
 import Layout from "@/components/Layout";
 import Head from "next/head";
 import Image from "next/image";
-import cvEN from "../../public/images/cv/cv_imagen.png";
+import cvEN from "../../public/images/cv/cv_imagen_en.png";
+import cvES from "../../public/images/cv/cv_imagen_es.png";
 import { EmailIcon, LocationPinIcon, LinkArrow } from "@/components/Icons";
 import Link from "next/link";
 import TransitionEffect from "@/components/TransitionEffect";
 
 const Contact = () => {
   const t = useTranslations("Contact");
+  const router = useRouter();
+  const { locale } = router;
+  const cvImage = locale === "es" ? cvES : cvEN;
   return (
     <>
       <TransitionEffect />
@@ -24,22 +29,22 @@ const Contact = () => {
             <div className="flex flex-col items-center order-1 md:order-2">
               <div className="relative h-max rounded-2xl border-2 border-solid border-dark dark:border-light bg-light dark:bg-dark p-4">
                 <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light" />
-                <a
-                  href="/images/cv/cv_imagen.png"
+                <Link
+                  href={t("cvLink")}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block"
                 >
                   <Image
-                    src={cvEN}
-                    alt="Walt Greenwich"
+                    src={cvImage}
+                    alt="Walt Greenwich CV"
                     className="w-60 h-auto rounded-2xl cursor-pointer"
                   />
-                </a>
+                </Link>
               </div>
               {/* Botón debajo de la imagen */}
               <Link
-                href="https://drive.google.com/file/d/1htdV3hIiuaRRx5ifRTgH89Sdq84UfJf3/view?usp=sharing"
+                href={t("cvLink")}
                 target={"_blank"}
                 className="mt-4 flex items-center justify-center whitespace-nowrap bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:dark:bg-dark hover:text-dark hover:dark:text-light dark:bg-light dark:text-dark hover:dark:border-light border-2 border-solid border-transparent hover:border-dark"
               >

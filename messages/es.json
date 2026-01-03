@@ -6,7 +6,8 @@
   "Home": {
     "pageTitle": "Portafolio de Desarrollador Full-Stack",
     "title": "Transformando ideas en experiencias digitales impactantes.",
-    "description": "Desarrollador full-stack con experiencia en React.js, Next.js, Node y diseño web, me especializo en crear aplicaciones web modernas, funcionales y atractivas. Descubre mis recientes proyectos, donde combino diseño, tecnología y usabilidad para ofrecer soluciones innovadoras."
+    "description": "Desarrollador full-stack con experiencia en React.js, Next.js, Node y diseño web, me especializo en crear aplicaciones web modernas, funcionales y atractivas. Descubre mis recientes proyectos, donde combino diseño, tecnología y usabilidad para ofrecer soluciones innovadoras.",
+    "cvLink": "https://drive.google.com/file/d/1PnW4GG7Dy8ic8E4NkU4LMDEXkBmm42S9/view?usp=sharing"
   },
   "LocaleSwitcher": {
     "switchLocale": "Switch to {locale, select, en {English} es {Spanish} other {Unknown}}"
@@ -51,6 +52,7 @@
     "title": "Contacto",
     "description": "¡Me entusiasma colaborar en proyectos significativos! Si valoras la dedicación, la creatividad y los resultados, ¡conectemos! Estoy listo para aportar mi experiencia y ayudarte a alcanzar tus metas. ¿Qué dices, empezamos?",
     "baseIn": "Actualmente estoy en",
-    "dCV": "Descargar CV"
+    "dCV": "Descargar CV",
+    "cvLink": "https://drive.google.com/file/d/1PnW4GG7Dy8ic8E4NkU4LMDEXkBmm42S9/view?usp=sharing"
   }
 }

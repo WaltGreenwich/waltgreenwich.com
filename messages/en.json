@@ -6,7 +6,8 @@
   "Home": {
     "pageTitle": "Full-Stack Developer Portfolio",
     "title": "Transforming Ideas Into Impactful Digital Experiences.",
-    "description": "As a full-stack developer with expertise in React.js, Next.js, Node and modern web design, I specialize in creating functional and visually appealing web applications. Explore my recent projects, where I combine design, technology, and usability to deliver innovative solutions."
+    "description": "As a full-stack developer with expertise in React.js, Next.js, Node and modern web design, I specialize in creating functional and visually appealing web applications. Explore my recent projects, where I combine design, technology, and usability to deliver innovative solutions.",
+    "cvLink": "https://drive.google.com/file/d/15m9EpQ8cxEU3Pi_TK1npq9nvkpzq8n8N/view?usp=sharing"
   },
   "LocaleSwitcher": {
     "switchLocale": "Switch to {locale, select, es {Spanish} en {English} other {Unknown}}"
@@ -51,6 +52,7 @@
     "title": "Contact",
     "description": "I’m excited to connect and collaborate on meaningful opportunities. Feel free to reach out if you value dedication, creativity, and a results-driven approach. Let’s explore how I can contribute to your team’s success and help you achieve your goals.",
     "baseIn": "Currently based in",
-    "dCV": "Download CV"
+    "dCV": "Download CV",
+    "cvLink": "https://drive.google.com/file/d/15m9EpQ8cxEU3Pi_TK1npq9nvkpzq8n8N/view?usp=sharing"
   }
 }

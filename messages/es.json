@@ -5,8 +5,8 @@
   },
   "Home": {
     "pageTitle": "Portafolio de Desarrollador Full-Stack",
-    "title": "Transformando ideas en experiencias digitales impactantes.",
-    "description": "Desarrollador full-stack con experiencia en React.js, Next.js, Node y diseño web, me especializo en crear aplicaciones web modernas, funcionales y atractivas. Descubre mis recientes proyectos, donde combino diseño, tecnología y usabilidad para ofrecer soluciones innovadoras.",
+    "title": "Transformando Ideas En Sistemas Inteligentes",
+    "description": "Desarrollador Full Stack especializado en IA Aplicada. Combino React, Python y LLMs para crear productos inteligentes que automatizan, analizan y deciden.",
     "cvLink": "https://drive.google.com/file/d/1PnW4GG7Dy8ic8E4NkU4LMDEXkBmm42S9/view?usp=sharing"
   },
   "LocaleSwitcher": {
@@ -25,7 +25,7 @@
   },
   "About": {
     "pageTitle": "Sobre mí",
-    "title": "¡Dando forma al futuro digital!",
+    "title": "Construyendo El Futuro de las Aplicaciones Inteligentes",
     "biography": "BIOGRAFIA",
     "p1": "Hola, soy Walter Greenwich, desarrollador frontend especializado en crear sitios web modernos, visualmente atractivos e intuitivos, centrados en el usuario.",
     "p2": "Con formación científica y experiencia como representante de ventas, he perfeccionado mis habilidades de comunicación, resolución de problemas y gestión de proyectos. Me especializo en React, Tailwind CSS y Next.js para crear soluciones digitales optimizadas y de alto rendimiento.",
@@ -50,7 +50,15 @@
   "Contact": {
     "pageTitle": "Contacto",
     "title": "Contacto",
-    "description": "¡Me entusiasma colaborar en proyectos significativos! Si valoras la dedicación, la creatividad y los resultados, ¡conectemos! Estoy listo para aportar mi experiencia y ayudarte a alcanzar tus metas. ¿Qué dices, empezamos?",
+    "description1": "¿Tienes un proyecto donde la IA puede marcar una diferencia real?",
+    "description2": "No solo busco 'otro trabajo', busco problemas interesantes que resolver con tecnología inteligente. Si tu proyecto necesita:",
+    "description3": [
+      "Automatización que realmente ahorra tiempo (no solo automatizar por automatizar).",
+      "Sistemas que procesan y entienden datos no estructurados.",
+      "Aplicaciones donde la IA es fundamental, no solo una característica más.",
+      "Un desarrollador que construye el producto completo (backend + IA + frontend)."
+    ],
+    "description4": "Entonces Hablemos. Combino código limpio con una comunicación clara y pasión por resolver problemas complejos. Si valoras la dedicación y los resultados tangibles, construyamos algo impactante juntos.",
     "baseIn": "Actualmente estoy en",
     "dCV": "Descargar CV",
     "cvLink": "https://drive.google.com/file/d/1PnW4GG7Dy8ic8E4NkU4LMDEXkBmm42S9/view?usp=sharing"

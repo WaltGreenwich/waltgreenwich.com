@@ -44,7 +44,7 @@ const About = () => {
         <Layout className="pt-16" pageNamespace="About">
           <AnimatedText
             text={t("title")}
-            className="mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8"
+            className="!text-7xl !text-center xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl mb-16"
           />
           <div className="grid w-full grid-cols-8 gap-16 sm:gap-8">
             <div className="col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8">
@@ -70,7 +70,7 @@ const About = () => {
               />
             </div>
 
-            <div className="col-span-2 flex flex-col items-end justify-between xl:col-span-8 xl:flex-row xl:items-center md:order-3">
+            <div className="col-span-2 flex flex-col items-end justify-between xl:col-span-8 xl:flex-row xl:items-center md:order-3 sm:text-center text-right md:justify-center md:gap-8 md:mt-8">
               <div
                 className="flex flex-col items-end justify-center
               xl:items-center

@@ -5,8 +5,8 @@
   },
   "Home": {
     "pageTitle": "Full-Stack Developer Portfolio",
-    "title": "Transforming Ideas Into Impactful Digital Experiences.",
-    "description": "As a full-stack developer with expertise in React.js, Next.js, Node and modern web design, I specialize in creating functional and visually appealing web applications. Explore my recent projects, where I combine design, technology, and usability to deliver innovative solutions.",
+    "title": "Transforming Ideas Into Intelligent Systems.",
+    "description": "Full Stack Developer Specializing in Applied AI. Combining React, Python, and LLMs to create intelligent products  that automate, analyze, and decide.",
     "cvLink": "https://drive.google.com/file/d/15m9EpQ8cxEU3Pi_TK1npq9nvkpzq8n8N/view?usp=sharing"
   },
   "LocaleSwitcher": {
@@ -25,11 +25,11 @@
   },
   "About": {
     "pageTitle": "About",
-    "title": "Shaping Digital Futures!",
+    "title": "Building The Future of Intelligent Applications",
     "biography": "BIOGRAPHY",
-    "p1": "Hi, I’m Walter Greenwich, a Frontend Developer focused on creating modern, user-centered websites that are both visually appealing and intuitive.",
-    "p2": "With a background in science and experience as a sales representative, I’ve honed skills in communication, problem-solving, and project management. I specialize in React, Tailwind CSS, and Next.js to craf high-performance, optimized digital solutions.",
-    "p3": "I’m passionate about staying up-to-date with the latest web development, from landing pages to e-commerce platforms, I bring a passion for responsive design and user-centered thinking to every project. Let’s collaborate to turn your vision into reality.",
+    "p1": "I'm Walter Greenwich, a Full Stack Developer who combines modern web development with applied artificial intelligence to create solutions that truly transform operations.",
+    "p2": "My Unique Approach: I don't just build pretty interfaces or scalable backends - I create complete systems where AI solves real business problems. While most developers integrate AI APIs as just another feature, I design AI-first architectures where artificial intelligence is the core engine of the solution.",
+    "p3": "From Science to Code: My scientific background taught me to analyze problems systematically. My sales experience gave me the ability to understand real user needs and communicate technical solutions clearly. Now I apply both perspectives to build products people actually want to use.",
     "pCompleted": "Projects Completed"
   },
   "Skills": {
@@ -49,8 +49,16 @@
   },
   "Contact": {
     "pageTitle": "Contact",
-    "title": "Contact",
-    "description": "I’m excited to connect and collaborate on meaningful opportunities. Feel free to reach out if you value dedication, creativity, and a results-driven approach. Let’s explore how I can contribute to your team’s success and help you achieve your goals.",
+    "title": "Ready To Build Something Extraordinary?",
+    "description1": "Have A Project Where AI Can Make A Real Difference?",
+    "description2": "I'm not looking for just 'another job'- I'm looking for interesting problems to solve with intelligent technology. If your project needs:",
+    "description3": [
+      "Automation that actually saves time (not just automates for the sake of it).",
+      "Systems that process and understand unstructured data.",
+      "Applications where AI is fundamental, not just another feature.",
+      "A developer who builds the complete product (backend + AI + frontend)."
+    ],
+    "description4": "Let’s talk. I combine clean code with clear communication and a passion for solving complex problems. If you value dedication and tangible results, let’s build something impactful together.",
     "baseIn": "Currently based in",
     "dCV": "Download CV",
     "cvLink": "https://drive.google.com/file/d/15m9EpQ8cxEU3Pi_TK1npq9nvkpzq8n8N/view?usp=sharing"

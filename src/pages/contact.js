@@ -10,11 +10,12 @@ import { EmailIcon, LocationPinIcon, LinkArrow } from "@/components/Icons";
 import Link from "next/link";
 import TransitionEffect from "@/components/TransitionEffect";
 
-const Contact = () => {
+const Contact = ({ messages }) => {
   const t = useTranslations("Contact");
   const router = useRouter();
   const { locale } = router;
   const cvImage = locale === "es" ? cvES : cvEN;
+  const desc3 = messages?.Contact?.description3 ?? t("description3");
   return (
     <>
       <TransitionEffect />
@@ -22,7 +23,7 @@ const Contact = () => {
         <Layout className="pt-16" pageNamespace="Contact">
           <AnimatedText
             text={t("title")}
-            className="mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8"
+            className="mb-16  sm:!text-5xl xs:!text-4xl sm:mb-8"
           />
           <div className="grid w-full grid-cols-2 gap-16 px-24 md:grid-cols-1 md:px-8">
             {/* Contenedor del CV */}
@@ -53,10 +54,21 @@ const Contact = () => {
             </div>
 
             {/* Información de contacto */}
-            <div className="flex flex-col items-start gap-6 dark:text-light order-2 md:order-1">
-              <p className="my-4 font-medium">{t("description")}</p>
+            <div className="flex flex-col items-start gap-3 dark:text-light order-2 md:order-1">
+              <p className="my-0 font-medium">{t("description1")}</p>
+              <p className="my-0 font-medium">{t("description2")}</p>
+              {Array.isArray(desc3) ? (
+                <ul className="my-4 font-medium list-disc list-inside">
+                  {desc3.map((item, i) => (
+                    <li key={i}>{item}</li>
+                  ))}
+                </ul>
+              ) : (
+                <p className="my-4 font-medium">{desc3}</p>
+              )}
+              <p className="my-0 font-medium">{t("description4")}</p>
               <div className="flex flex-col items-start">
-                <div className="flex items-center md:text-sm">
+                <div className="flex items-center md:text-sm mt-4">
                   <EmailIcon className="w-6 h-6 mr-2 md:w-4 md:mr-1.5" />
                   <span>walter.greenwich@gmail.com</span>
                 </div>

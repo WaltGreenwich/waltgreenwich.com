@@ -6,6 +6,7 @@ import { Badge } from "@/components/Badges";
 import Link from "next/link";
 import Image from "next/image";
 import { GithubIcon } from "@/components/Icons";
+import project0 from "../../public/images/projects/w-webhook-automation.png";
 import project1 from "../../public/images/projects/ai-email-intelligence.png";
 import project2 from "../../public/images/projects/nike-webclone.png";
 import project3 from "../../public/images/projects/brainwave.png";
@@ -137,6 +138,17 @@ const Projects = () => {
           />
 
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
+            <div className="col-span-12">
+              <FeaturedProject
+                title="WhatsApp Webhook Automation"
+                img={project0}
+                name={["n8n", "PostgreSQL", "Docker"]}
+                summary={t("summary0")}
+                link="https://github.com/WaltGreenwich/whatsapp-webhook-automation"
+                github="https://github.com/WaltGreenwich/whatsapp-webhook-automation"
+                type={t("type")}
+              />
+            </div>
             <div className="col-span-12">
               <FeaturedProject
                 title="AI Email Intelligence"

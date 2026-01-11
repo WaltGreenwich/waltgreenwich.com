@@ -18,6 +18,11 @@ const techBadges = {
   Pandas:
     "https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white",
   LLM: "https://img.shields.io/badge/Applied_AI-05122A?style=flat-square&logo=brain&logoColor=white",
+  n8n: "https://img.shields.io/badge/n8n-FF6B00?style=flat-square&logo=n8n&logoColor=white",
+  PostgreSQL:
+    "https://img.shields.io/badge/PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white",
+  Docker:
+    "https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white",
 };
 
 export const Badge = ({ name }) => {
